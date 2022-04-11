@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $base-font-family;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $base-color;
+  text-align: left;
+  background-color: $base-bg-color;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.todo-app {
+  width: 300px;
+  height: 600px;
+
+  background-color: 'grey';
+  box-shadow: 0 0 32px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+
+  margin: 64px auto 0;
+  padding: 16px 32px;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.todo-item .todo-item-text {
+  margin-left: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.todo-item .todo-item-text.completed {
+  position: relative;
+  color: 'grey';
+}
+
+.todo-item .todo-item-text.completed::before {
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  left: 0;
+  background: linear-gradient(to right, orange, red);
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin-bottom: 16px;
+  font-size: inherit;
+  font-weight: 300;
+}
+
+.form-field::placeholder {
+  color: #C0BCBC;
+}
+
+.form-error {
+  font-size: 10px;
+  font-weight: 600;
+  color: red;
+  margin-top: 16px;
+}

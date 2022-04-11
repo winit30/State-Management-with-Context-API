@@ -1,0 +1,5 @@
+export const ITEMS = {
+	ADD: 'ITEMS_ADD',
+	RESET: 'ITEMS_RESET',
+	COMPLETE: 'ITEMS_COMPLETE'
+}

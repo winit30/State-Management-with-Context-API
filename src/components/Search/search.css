@@ -1,0 +1,13 @@
+.appContainer {
+  text-align: center;
+  padding: 30px;
+}
+
+.listCont {
+  text-align: left;
+  padding-top: 15px;
+}
+
+.listCont span.hightlightText {
+  color: orange !important;
+}
